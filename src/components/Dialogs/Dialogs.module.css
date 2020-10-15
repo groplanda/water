@@ -1,0 +1,26 @@
+.dialogs {
+    width: 80%;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+}
+.dialogs_items {
+    width: 40%;
+    border-right: 2px solid #eee;
+}
+.dialog {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 2px solid #eee;
+}
+.messages {
+    margin-left: 20px;
+    width: calc(60% - 20px);
+}
+.message {
+    margin-bottom: 20px;
+    padding: 20px;
+    max-width: 400px;
+    background-color: #eee;
+    border-radius: 10px;
+}

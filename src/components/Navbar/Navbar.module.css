@@ -1,0 +1,15 @@
+nav {
+    width: 20%;
+    text-align: left;
+    background-color: seashell;
+    padding: 20px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li a {
+    color: gold;
+}
+nav ul li a.active {
+    color: goldenrod;
+}
