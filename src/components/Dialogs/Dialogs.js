@@ -1,25 +1,18 @@
 import React from 'react'
 import classes from './Dialogs.module.css'
+import DialogItem from './DialogItem/DialogItem'
+import Message from './Message/Message'
 
-const Dialogs = (props) => {
+const Dialogs = ({state}) => {
+    
     return (
         <React.Fragment>
             <div className={classes.dialogs}>
                 <div className={classes.dialogs_items}>
-                    <div className={classes.dialog}>
-                        Igor
-                    </div>
-                    <div className={classes.dialog}>
-                        Andrey
-                    </div>
+                    {state.dialogs.map(dialog => <DialogItem dialog={dialog} key={dialog.id} />)}
                 </div>
                 <div className={classes.messages}>
-                    <div className={classes.message}>
-                        hi
-                    </div>
-                    <div className={classes.message}>
-                        how are you?
-                    </div>
+                    {state.messages.map(message => <Message message={message} key={message.id} />)}
                 </div>
             </div>
         </React.Fragment>
